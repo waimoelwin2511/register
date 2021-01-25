@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Contact Us</h2>
+            <div id="error_message"></div>
+            <form id="myForm" onsubmit="return validation()">
+                <div class="input_field">
+                    <label>Name</label>
+                    <input type="text" placeholder="name" id="name" >
+                </div>
+                <div class="input_field">
+                    <label>Phone</label>
+                    <input type="text" placeholder="Phone" id="Phone" >
+                </div>
+                <div class="input_field">
+                    <label>NRC</label>
+                    <div class="container">
+                         <div class="row">
+                             <div class="col">
+                                <select name="first_no">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <select name="first_no">
+                                    <option value="YGN">YGN</option>
+                                    <option value="MDY">MDY</option>
+                                    <option value="MD">MD</option>
+                                    <option value="MLM">MLM</option>
+                                    <option value="TH">TH</option>
+                                </select>
+                                <select name="first_no">
+                                    <option value="N">(N)</option>
+                                    <option value="F">(F)</option>
+                                </select>
+                                <input type="number" id="nrc">
+                              </div>
+                            </div>
+                         </div>
+                </div>
+                <div class="input_field">
+                    <label>Chech In</label>
+                    <input type="date" placeholder="checkin" id="checkin" >
+                </div>
+                <div class="input_field">
+                    <label>Room</label>
+                    <input type="text" placeholder="room" id="room" >
+                </div>
+                <div class="btn">
+                    <input type="submit">
+                </div>
+            </form>
+    </div>
+</body>
+</html>
